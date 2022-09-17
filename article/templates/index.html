@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="jumbotron">
+    <h1>Yazılım Bilimi Bloğuna Hoşgeldiniz</h1>
+    <p>Bu blogta geliştiriciler olarak blog yazılarınızı paylaşabilirsiniz ve insanlara yardımcı olabilirsiniz.</p>
+</div>
+
+<ul>
+{% for number in numbers %}
+        <li>{{number}}</li>
+
+{% endfor %}
+
+</ul>
+
+{% endblock body %}
